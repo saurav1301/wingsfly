@@ -8,7 +8,7 @@ A clean, modular React Native CLI project that recreates the given Figma-based h
 
 | Light Mode | Dark Mode |
 |------------|-----------|
-| ![light home](./screenshots/light_home.jpeg) | ![Dark Home](./screenshots/dark_home.jpeg) |
+| ![Light Home](./screenshots/light_home.jpeg) | ![Dark Home](./screenshots/dark_home.jpeg) |
 | ![Light Modal](./screenshots/light_modal.jpeg) | ![Dark Modal](./screenshots/dark_modal.jpeg) |
 
 ---
@@ -27,4 +27,85 @@ A clean, modular React Native CLI project that recreates the given Figma-based h
 ```bash
 git clone https://github.com/yourusername/wingsfly-ui-clone.git
 cd wingsfly-ui-clone
+```
 
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run the App
+
+```bash
+npx react-native run-android
+# or
+npx react-native run-ios
+```
+
+### 4. Configure Android Permissions (Optional for file/modal features)
+
+Edit `android/app/src/main/AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+```
+
+For Android 11+, inside `<application>` tag:
+
+```xml
+android:requestLegacyExternalStorage="true"
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+wingsfly-ui-clone/
+├── components/
+│   ├── DateButton.tsx
+│   ├── ProgressBar.tsx
+│   ├── TaskItem.tsx
+│   ├── FloatingActionButton.tsx
+│   └── BottomDrawerModal.tsx
+├── screens/
+│   └── HomeScreen.tsx
+├── types/
+│   └── Task.ts
+├── utils/
+│   └── constants.ts
+├── screenshots/
+│   ├── light_home.jpeg
+│   ├── dark_home.jpeg
+│   ├── light_modal.jpeg
+│   └── dark_modal.jpeg
+└── App.tsx
+```
+
+---
+
+## 🔧 Key Features
+
+- Accurate UI recreation from Figma
+- Modular code architecture
+- Bottom Drawer modal with slide-up animation using `react-native-reanimated`
+- Light and Dark mode support
+- Responsive layout
+- Reusable components
+
+---
+
+## 🙋 Author
+
+**Saurav Singh Negi**  
+GitHub: [@saurav1301](https://github.com/saurav1301)
+
+---
+
+## 📄 License
+
+This project is intended for assignment/demo purposes only.
