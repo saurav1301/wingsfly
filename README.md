@@ -8,8 +8,8 @@ A clean, modular React Native CLI project that recreates the given Figma-based h
 
 | Light Mode | Dark Mode |
 |------------|-----------|
-| ![Light Home](./screenshots/light_home.png) | ![Dark Home](./screenshots/dark_home.png) |
-| ![Light Modal](./screenshots/light_modal.png) | ![Dark Modal](./screenshots/dark_modal.png) |
+| ![Light Home](./screenshots/light_home.jpeg) | ![Dark Home](./screenshots/dark_home.jpeg) |
+| ![Light Modal](./screenshots/light_modal.jpeg) | ![Dark Modal](./screenshots/dark_modal.lpeg) |
 
 ---
 
